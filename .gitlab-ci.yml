@@ -1,7 +1,7 @@
 image: knsit/pandoc:latest
 my_nice_pdf:
   variables:
-    SOURCE_DIR: "content"
+    SOURCE_DIR: "."
     INDEX_FILE: "INDEX"
     DEST_FILE_NAME: "my_nice_document"
     TEMPLATE: "eisvogel"
@@ -26,6 +26,6 @@ my_nice_pdf:
     expire_in: 6 month
   only:
     changes:
-    - content/HEADER.YAML
-    - content/INDEX
-    - content/01-Intro.md
+    - HEADER.YAML
+    - INDEX
+    - 01-Intro.md
