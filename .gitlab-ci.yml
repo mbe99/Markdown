@@ -28,4 +28,4 @@ my_nice_pdf:
     changes:
     - HEADER.YAML
     - INDEX
-    - 01-Intro.md
+    - README.md
