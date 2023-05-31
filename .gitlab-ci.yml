@@ -1,0 +1,31 @@
+image: knsit/pandoc:latest
+my_nice_pdf:
+  variables:
+    SOURCE_DIR: "content"
+    INDEX_FILE: "INDEX"
+    DEST_FILE_NAME: "my_nice_document"
+    TEMPLATE: "eisvogel"
+    SOURCE_FORMAT: "markdown_strict+pipe_tables+\
+        backtick_code_blocks+auto_identifiers+\
+        yaml_metadata_block+smart+implicit_figures+\
+        table_captions+footnotes+smart+\
+        escaped_line_breaks+header_attributes"
+    DATA_DIR: "pandoc"
+  script:
+    - DATE=$(date +_%Y-%m-%d)
+    - DEST_FILE_NAME_DATE=$DEST_FILE_NAME$DATE
+    - DATE=$(date "+%d %B %Y")
+    - cd "$SOURCE_DIR"
+    - pandoc -s -o $DEST_FILE_NAME_DATE.pdf -f $SOURCE_FORMAT --data-dir="$DATA_DIR" --template $TEMPLATE -M date="$DATE" --toc --listings --columns=50 --number-sections --pdf-engine xelatex --dpi=300 $(cat "$INDEX_FILE") >&1
+    - mkdir -p "$CI_PROJECT_DIR"/my_nice_pdf
+    - mv $DEST_FILE_NAME_DATE.pdf "$CI_PROJECT_DIR"/my_nice_pdf/
+  stage: build
+  artifacts:
+    paths:
+    - my_nice_pdf
+    expire_in: 6 month
+  only:
+    changes:
+    - content/HEADER.YAML
+    - content/INDEX
+    - content/01-Intro.md
