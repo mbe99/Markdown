@@ -2,12 +2,13 @@
 
 ## Untertitel
 
-### Untertitel
+### Sub-Untertitel
 
 #### mehr Untertitel
 
-# Text Formatieren
-Normal, dann **fett** und jetz *kursiv* und wieder ***fett und kursiv***, jetzt wieder normal
+### Text Formatieren
+
+Normal, dann **fett** und jetz *kursiv* und wieder  ***fett und kursiv***, jetzt wieder normal
 
 > Achtung: MD brauch keine `cr/lf` für einen Zeilenumbruch. 
 
@@ -86,22 +87,22 @@ alias ls='ls --color=auto'
 
 ### Bilder einfügen
 
-    ![Image](images/denken.png)
+    ![Image](img/denken.png)
 
 
-![Image](images/denken.png)
+![Image](img/denken.png)
 
 oder alternativ mit HTML Code. 
 
-    <img style="float: none;width:500px;height:420px;" src="images/images.jpg"> 
+    <img style="float: none;width:500px;height:420px;" src="img/images.jpg"> 
 
-<img style="float: none;width:500px;height:420px;" src="images/images.jpg"> 
+<img style="float: none;width:500px;height:420px;" src="img/images.jpg"> 
 
 Das hat den Vorteil, dass die Imagegrösse dem Bild angepasst werden kann.
 
-    <img style="float: none;width:250px;height:210px;" src="images/images.jpg"> 
+    <img style="float: none;width:250px;height:210px;" src="img/images.jpg"> 
 
-<img style="float: none;width:250px;height:210px;" src="images/images.jpg"> 
+<img style="float: none;width:250px;height:210px;" src="img/images.jpg"> 
 
 
 > leider funktioniert das Anpassen der Grösse mit HTML-Code nicht in allen MD Implementationen
