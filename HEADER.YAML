@@ -9,7 +9,7 @@
  titlepage-text-color: "000000"
  titlepage-rule-color: "CCCCCC"
  titlepage-rule-height: 4
- logo: "image/markdown.png"
+ logo: "images/markdown.png"
  logo-width: 100
  page-background:
  page-background-opacity:
