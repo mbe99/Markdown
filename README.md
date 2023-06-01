@@ -87,22 +87,22 @@ alias ls='ls --color=auto'
 
 ### Bilder einfügen
 
-    ![Image](images/denken.png)
+    ![Denken ist wie Googeln](images/denken.png)
 
 
-![Image](images/denken.jpg)
+![Denken ist wie Googeln](images/denken.png)
 
 oder alternativ mit HTML Code. 
 
-    <img style="float: none;width:500px;height:420px;" src="imgages/images.jpg"> 
+    <img style="float: none;width:500px;height:420px;" src="images/images.jpg"> 
 
-<img style="float: none;width:500px;height:420px;" src="imgages/images.jpg"> 
+<img style="float: none;width:500px;height:420px;" src="images/images.jpg"> 
 
 Das hat den Vorteil, dass die Imagegrösse dem Bild angepasst werden kann.
 
-    <img style="float: none;width:250px;height:210px;" src="imgages/images.jpg"> 
+    <img style="float: none;width:250px;height:210px;" src="images/images.jpg"> 
 
-<img style="float: none;width:250px;height:210px;" src="imgages/images.jpg"> 
+<img style="float: none;width:250px;height:210px;" src="images/images.jpg"> 
 
 
 > leider funktioniert das Anpassen der Grösse mit HTML-Code nicht in allen MD Implementationen
