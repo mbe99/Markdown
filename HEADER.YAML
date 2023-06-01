@@ -22,8 +22,8 @@
  header-left:
  header-center:
  header-right:
- footer-left: "Marco Berger"
- footer-center: "License: mbe"
+ footer-left: 
+ footer-center: "© Marco Berger"
  footer-right:
  subparagraph: true
  lang: en-US
