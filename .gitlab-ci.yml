@@ -1,7 +1,7 @@
 image: knsit/pandoc:latest
 my_nice_pdf:
   variables:
-    SOURCE_DIR: "."
+    SOURCE_DIR: "/"
     INDEX_FILE: "INDEX"
     DEST_FILE_NAME: "my_nice_document"
     TEMPLATE: "eisvogel"
