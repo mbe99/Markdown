@@ -2,14 +2,14 @@
  title: "Einführung in Markdown"
  author: "Author: Marco Berger"
  date:
- subtitle: "Detailed manual for all"
+ subtitle: "für das Modul 300"
  geometry: "left=2.54cm,right=2.54cm,top=1.91cm,bottom=1.91cm"
  titlepage: true
  titlepage-color: "FFFFFF"
  titlepage-text-color: "000000"
  titlepage-rule-color: "CCCCCC"
  titlepage-rule-height: 4
- logo: "img/logo/logo.png"
+ logo: "image/markdown.png"
  logo-width: 100
  page-background:
  page-background-opacity:
