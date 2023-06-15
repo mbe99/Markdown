@@ -204,9 +204,25 @@ oder mit Nummerierung. Bei Eingabe von `Enter` wird auf der neuen Zeile die Numm
    
 ### Checkboxen
 
+*Einfache Checkbox*
+
 ```
 - [ ] Anklicken wenn fertig
 ```
 
 - [ ] Anklicken wenn fertig
 
+
+*Checkboxen in Tabellen*
+
+```
+| Function | MySQL | Postgres|
+| :-- | :--: | :--: |
+| subst  | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled />  |
+| count  | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked/>  |
+```
+
+| Function | MySQL | Postgres|
+| :-- | :--: | :--: |
+| subst  | <input type="checkbox" disabled checked />  |<input type="checkbox"  />  |
+| count  | <input type="checkbox" disabled checked />  |<input type="checkbox" disabled checked/>  |>  |
