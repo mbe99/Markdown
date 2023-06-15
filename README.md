@@ -202,4 +202,11 @@ oder mit Nummerierung. Bei Eingabe von `Enter` wird auf der neuen Zeile die Numm
 3. drittens
 4. 
    
+### Checkboxen
+
+```
+- [ ] Anklicken wenn fertig
+```
+
+- [ ] Anklicken wenn fertig
 
