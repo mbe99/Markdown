@@ -1,7 +1,13 @@
 name: Convert README.md to PDF
 
 on:
-  workflow_dispatch:
+  label:
+    types:
+      - created
+  push:
+    branches:
+      - main
+  page_build:
 
 jobs:
   converttopdf:
